@@ -1,0 +1,21 @@
+
+<section>
+  <div class="column">
+      <div class="code-section">
+        {{textarea  rows=15 value=model.code placeholder="codes comes here..."}}
+      </div>
+      <button class="run-button" {{action "parseCode" model.code}}>Run</button>
+      <div class="output-section">
+        {{textarea  rows=5 value=model.output }}
+      </div>
+  </div>
+  <div class="column">
+    <table class="board">
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="column">type your code</div>
+  <div class="column">robot</div>
+</section>
